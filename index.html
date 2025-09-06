@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Yurani Pasto - Odontología Estética</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root">
+        <!-- Navigation -->
+        <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16 md:h-20">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">Y</span>
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-bold text-gray-900">Dra. Yurani Pasto</h2>
+                            <p class="text-xs text-blue-500">Odontología Estética</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#inicio" class="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium">Inicio</a>
+                        <a href="#sobre-mi" class="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium">Sobre Mí</a>
+                        <a href="#servicios" class="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium">Servicios</a>
+                        <a href="#galeria" class="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium">Galería</a>
+                        <a href="#testimonios" class="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium">Testimonios</a>
+                        <a href="#blog" class="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium">Blog</a>
+                        <a href="#contacto" class="text-gray-700 hover:text-blue-500 transition-colors duration-200 font-medium">Contacto</a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-4">
+                        <button class="border border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white px-4 py-2 rounded-md text-sm">
+                            <i class="fas fa-phone-alt mr-2"></i>Llamar
+                        </button>
+                        <button class="bg-gradient-to-r from-blue-500 to-teal-400 hover:from-blue-600 hover:to-teal-500 text-white px-4 py-2 rounded-md text-sm">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                        </button>
+                    </div>
+                    <button class="md:hidden p-2" id="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden fixed inset-0 z-40 md:hidden">
+            <div class="absolute inset-0 bg-black/50"></div>
+            <div class="absolute right-0 top-0 h-full w-80 bg-white shadow-xl">
+                <div class="flex flex-col h-full pt-20 px-6">
+                    <a href="#inicio" class="py-4 text-lg font-medium text-gray-700 hover:text-blue-500 border-b border-gray-100">Inicio</a>
+                    <a href="#sobre-mi" class="py-4 text-lg font-medium text-gray-700 hover:text-blue-500 border-b border-gray-100">Sobre Mí</a>
+                    <a href="#servicios" class="py-4 text-lg font-medium text-gray-700 hover:text-blue-500 border-b border-gray-100">Servicios</a>
+                    <a href="#galeria" class="py-4 text-lg font-medium text-gray-700 hover:text-blue-500 border-b border-gray-100">Galería</a>
+                    <a href="#testimonios" class="py-4 text-lg font-medium text-gray-700 hover:text-blue-500 border-b border-gray-100">Testimonios</a>
+                    <a href="#blog" class="py-4 text-lg font-medium text-gray-700 hover:text-blue-500 border-b border-gray-100">Blog</a>
+                    <a href="#contacto" class="py-4 text-lg font-medium text-gray-700 hover:text-blue-500 border-b border-gray-100">Contacto</a>
+                    <div class="mt-8 space-y-4">
+                        <button class="w-full border border-purple-500 text-purple-500 px-4 py-2 rounded-md">
+                            <i class="fas fa-phone-alt mr-2"></i>300 705 4003
+                        </button>
+                        <button class="w-full bg-gradient-to-r from-blue-500 to-teal-400 text-white px-4 py-2 rounded-md">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Sections -->
+        <main>
+            <!-- HeroSection -->
+            <section id="inicio" class="relative min-h-screen flex items-center bg-gradient-to-br from-white via-blue-50 to-white overflow-hidden">
+                <div class="absolute inset-0 opacity-5">
+                    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, #00a9d4 2px, transparent 2px); background-size: 50px 50px;"></div>
+                </div>
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div class="text-center lg:text-left">
+                            <div class="inline-flex items-center mb-6">
+                                <span class="bg-gradient-to-r from-teal-400 to-blue-300 text-gray-900 px-4 py-2 text-sm rounded-full">
+                                    <i class="fas fa-star mr-2"></i>
+                                    Especialista en Estética Dental
+                                </span>
+                            </div>
+                            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                                Dra. <span class="text-blue-500">Yurani</span>
+                                <br>
+                                <span class="text-purple-600">Pasto</span>
+                            </h1>
+                            <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                                "Transformamos vidas devolviendo
+                                <br>
+                                <span class="text-blue-500 font-semibold">naturalidad a tu sonrisa</span>"
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 mb-8">
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-teal-400"></i>
+                                    <span class="text-sm text-gray-600">10+ años de experiencia</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-teal-400"></i>
+                                    <span class="text-sm text-gray-600">500+ sonrisas transformadas</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-teal-400"></i>
+                                    <span class="text-sm text-gray-600">Especialista en estética dental</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <i class="fas fa-check-circle text-teal-400"></i>
+                                    <span class="text-sm text-gray-600">Turismo dental internacional</span>
+                                </div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <button class="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-500 text-white shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-aqua px-6 py-3 rounded-lg">
+                                    <i class="fas fa-calendar-alt mr-2"></i>
+                                    Agenda tu Cita
+                                </button>
+                                <button class="border-2 border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-white shadow-lg hover:shadow-xl transition-all duration-300 px-6 py-3 rounded-lg">
+                                    <i class="fab fa-whatsapp mr-2"></i>
+                                    WhatsApp
+                                </button>
+                            </div>
+                            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-600">
+                                <div class="flex items-center space-x-2">
+                                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                    <span>Disponible 24 horas</span>
+                                </div>
+                                <div>📞 300 705 4003</div>
+                                <div>📍 Cali, Colombia</div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="relative z-10">
+                                <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+                                    <img src="https://images.unsplash.com/photo-1565090567208-c8038cfcf6cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBmZW1hbGUlMjBkZW50aXN0JTIwZG9jdG9yfGVufDF8fHx8MTc1NTU3NjY4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Dra. Yurani Pasto - Odontóloga Especialista" class="w-full h-[600px] object-cover">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-blue-500/20 to-transparent"></div>
+                                    <div class="absolute top-6 right-6 bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+                                        <div class="flex items-center space-x-2">
+                                            <div class="flex text-teal-400">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+                                            <span class="text-sm font-semibold text-gray-900">5.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -top-4 -left-4 w-24 h-24 bg-teal-400/20 rounded-full blur-xl"></div>
+                            <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-purple-600/20 rounded-full blur-xl"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                    <div class="w-6 h-10 border-2 border-blue-500 rounded-full flex justify-center">
+                        <div class="w-1 h-3 bg-blue-500 rounded-full mt-2"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AboutSection -->
+            <section id="sobre-mi" class="py-20 bg-gradient-to-b from-white to-blue-50/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <span class="bg-teal-400/10 text-teal-400 mb-4 px-4 py-1 rounded-full text-sm">
+                            Sobre la Doctora
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Dra. Yurani Pasto
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Especialista en odontología estética con pasión por crear sonrisas naturales
+                            y devolver la confianza a cada paciente
+                        </p>
+                    </div>
+                    <div class="grid lg:grid-cols-12 gap-12 items-center mb-20">
+                        <div class="lg:col-span-5">
+                            <div class="relative">
+                                <div class="relative overflow-hidden rounded-2xl shadow-2xl">
+                                    <img src="https://images.unsplash.com/photo-1642844819197-5f5f21b89ff8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjBjbGluaWMlMjBtb2Rlcm4lMjBpbnRlcmlvcnxlbnwxfHx8fDE3NTU1NzY2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Consultorio Dra. Yurani Pasto" class="w-full h-[500px] object-cover">
+                                </div>
+                                <div class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-6 border border-gray-100">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full flex items-center justify-center">
+                                            <i class="fas fa-award text-white text-2xl"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-2xl font-bold text-gray-900">10+</p>
+                                            <p class="text-sm text-gray-600">Años de experiencia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-7">
+                            <div class="space-y-6">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                        Pasión por la Excelencia Dental
+                                    </h3>
+                                    <p class="text-gray-600 leading-relaxed mb-4">
+                                        Como odontóloga graduada de la prestigiosa Universidad Santiago de Cali,
+                                        he dedicado más de una década a perfeccionar el arte de la sonrisa.
+                                        Mi enfoque va más allá de la técnica dental tradicional.
+                                    </p>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        Me especializo en combinar la ciencia dental con la estética avanzada,
+                                        utilizando las últimas tecnologías en diseño de sonrisa, botox dental
+                                        y ácido hialurónico para crear resultados naturales y armoniosos.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900 mb-3">Especialidades</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors px-3 py-1 rounded-full text-sm">Diseño de Sonrisa</span>
+                                        <span class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors px-3 py-1 rounded-full text-sm">Estética Dental</span>
+                                        <span class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors px-3 py-1 rounded-full text-sm">Rehabilitación Oral</span>
+                                        <span class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors px-3 py-1 rounded-full text-sm">Implantes Dentales</span>
+                                        <span class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors px-3 py-1 rounded-full text-sm">Botox Dental</span>
+                                        <span class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors px-3 py-1 rounded-full text-sm">Ácido Hialurónico</span>
+                                        <span class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors px-3 py-1 rounded-full text-sm">Turismo Dental</span>
+                                        <span class="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white transition-colors px-3 py-1 rounded-full text-sm">Odontología Cosmética</span>
+                                    </div>
+                                </div>
+                                <div class="bg-gradient-to-r from-blue-50 to-white p-6 rounded-xl border border-blue-500/10">
+                                    <h4 class="text-lg font-semibold text-purple-600 mb-2">Mi Misión</h4>
+                                    <p class="text-gray-700 italic">
+                                        "Transformar no solo sonrisas, sino vidas completas. Cada paciente merece
+                                        sentirse seguro y orgulloso de su sonrisa, y esa es mi mayor motivación."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                        <div class="text-center p-6 border rounded-lg hover:shadow-lg">
+                            <i class="fas fa-graduation-cap text-4xl text-blue-500 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Formación Académica</h3>
+                            <p class="text-gray-600 text-sm">Odontóloga graduada de la Universidad Santiago de Cali</p>
+                        </div>
+                        <div class="text-center p-6 border rounded-lg hover:shadow-lg">
+                            <i class="fas fa-clock text-4xl text-blue-500 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Experiencia</h3>
+                            <p class="text-gray-600 text-sm">Más de 10 años transformando sonrisas</p>
+                        </div>
+                        <div class="text-center p-6 border rounded-lg hover:shadow-lg">
+                            <i class="fas fa-star text-4xl text-blue-500 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Especialización</h3>
+                            <p class="text-gray-600 text-sm">Diseño de sonrisa, estética dental, botox y ácido hialurónico</p>
+                        </div>
+                        <div class="text-center p-6 border rounded-lg hover:shadow-lg">
+                            <i class="fas fa-globe text-4xl text-blue-500 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Turismo Dental</h3>
+                            <p class="text-gray-600 text-sm">Amplia experiencia atendiendo pacientes internacionales</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-purple-600 to-purple-800 rounded-2xl p-8 md:p-12">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                            <div class="text-center">
+                                <div class="text-3xl md:text-4xl font-bold text-white mb-2">10+</div>
+                                <div class="text-blue-100 text-sm md:text-base">Años de Experiencia</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl md:text-4xl font-bold text-white mb-2">500+</div>
+                                <div class="text-blue-100 text-sm md:text-base">Sonrisas Transformadas</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl md:text-4xl font-bold text-white mb-2">50+</div>
+                                <div class="text-blue-100 text-sm md:text-base">Pacientes Internacionales</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl md:text-4xl font-bold text-white mb-2">100%</div>
+                                <div class="text-blue-100 text-sm md:text-base">Satisfacción</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- ServicesSection -->
+            <section id="servicios" class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <span class="bg-blue-100 text-blue-500 mb-4 px-4 py-1 rounded-full text-sm">
+                            Servicios Odontológicos
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Tratamientos Especializados
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Ofrecemos una gama completa de servicios odontológicos con la más alta
+                            calidad y tecnología de vanguardia
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
+                        <!-- Service Card -->
+                        <div class="h-full group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg p-6 rounded-lg">
+                            <div class="w-14 h-14 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-smile text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg text-gray-900 group-hover:text-blue-500 transition-colors font-semibold">Diseño de Sonrisa</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-2">Sonrisa armónica, natural y personalizada que realza tu belleza única.</p>
+                        </div>
+                        <!-- Service Card -->
+                        <div class="h-full group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg p-6 rounded-lg">
+                            <div class="w-14 h-14 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-stethoscope text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg text-gray-900 group-hover:text-blue-500 transition-colors font-semibold">Rehabilitación Oral</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-2">Recuperación completa de función y estética dental.</p>
+                        </div>
+                        <!-- Service Card -->
+                        <div class="h-full group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg p-6 rounded-lg">
+                            <div class="w-14 h-14 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-bolt text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg text-gray-900 group-hover:text-blue-500 transition-colors font-semibold">Implantes Dentales</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-2">Titanio de alta calidad, solución segura y duradera.</p>
+                        </div>
+                        <!-- Service Card -->
+                        <div class="h-full group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 shadow-lg p-6 rounded-lg">
+                            <div class="w-14 h-14 bg-gradient-to-r from-amber-500 to-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-crown text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-lg text-gray-900 group-hover:text-blue-500 transition-colors font-semibold">Coronas Dentales</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed mt-2">Porcelana y zirconio para dientes naturales y resistentes.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-50 to-white rounded-2xl p-8 md:p-12">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                                Servicios Adicionales
+                            </h3>
+                            <p class="text-gray-600">
+                                También ofrecemos una amplia gama de tratamientos complementarios
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-blue-500/5">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                    <span class="text-gray-700 text-sm font-medium">Blanqueamiento Dental Profesional</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-blue-500/5">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                    <span class="text-gray-700 text-sm font-medium">Botox Dental y Facial</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-blue-500/5">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                    <span class="text-gray-700 text-sm font-medium">Ácido Hialurónico</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-blue-500/5">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                    <span class="text-gray-700 text-sm font-medium">Carillas de Porcelana</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-blue-500/5">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                    <span class="text-gray-700 text-sm font-medium">Endodoncia</span>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow duration-300 border border-blue-500/5">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                                    <span class="text-gray-700 text-sm font-medium">Limpieza Dental Profunda</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-16">
+                        <div class="bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl p-8 md:p-12 text-white">
+                            <h3 class="text-2xl md:text-3xl font-bold mb-4">
+                                ¿No encuentras el tratamiento que buscas?
+                            </h3>
+                            <p class="text-blue-100 mb-8 max-w-2xl mx-auto">
+                                Contáctanos para una consulta personalizada. Evaluaremos tu caso
+                                y te recomendaremos el mejor tratamiento para ti.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <button class="bg-white text-blue-500 hover:bg-gray-100 px-6 py-3 rounded-lg">
+                                    Consulta Gratuita
+                                </button>
+                                <button class="border-white text-white hover:bg-white hover:text-blue-500 px-6 py-3 rounded-lg">
+                                    Ver Planes de Financiación
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GallerySection -->
+            <section id="galeria" class="py-20 bg-gradient-to-b from-blue-50/30 to-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <span class="bg-yellow-100 text-yellow-500 mb-4 px-4 py-1 rounded-full text-sm">
+                            Galería de Sonrisas
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Resultados que Hablan por Sí Solos
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Cada sonrisa cuenta una historia de transformación. Conoce algunos de
+                            nuestros casos más exitosos.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-3 mb-12">
+                        <button data-category="all" class="gallery-filter-button bg-blue-500 text-white px-4 py-2 rounded-md">Todos</button>
+                        <button data-category="smile-design" class="gallery-filter-button border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Diseño de Sonrisa</button>
+                        <button data-category="implants" class="gallery-filter-button border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Implantes</button>
+                        <button data-category="orthodontics" class="gallery-filter-button border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Ortodoncia</button>
+                        <button data-category="veneers" class="gallery-filter-button border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Carillas</button>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                        <div class="gallery-item" data-category="smile-design">
+                            <img src="https://images.unsplash.com/photo-1575183464658-e031ef1cd833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzbWlsZSUyMHRlZXRofGVufDF8fHx8MTc1NTU3NjY4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" class="rounded-lg">
+                        </div>
+                        <div class="gallery-item" data-category="implants">
+                            <img src="https://images.unsplash.com/photo-1598256989809-394fa4f6cd26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjBpbXBsYW50cyUyMGJlZm9yZSUyMGFmdGVyfGVufDF8fHx8MTc1NTU3NjY4Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" class="rounded-lg">
+                        </div>
+                        <div class="gallery-item" data-category="orthodontics">
+                            <img src="https://images.unsplash.com/photo-1575183464658-e031ef1cd833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzbWlsZSUyMHRlZXRofGVufDF8fHx8MTc1NTU3NjY4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" class="rounded-lg">
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl p-8 md:p-12 text-center">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-8">
+                            Resultados que nos Enorgullecen
+                        </h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                            <div>
+                                <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
+                                    500+
+                                </div>
+                                <div class="text-blue-100 text-sm">
+                                    Sonrisas Transformadas
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
+                                    98%
+                                </div>
+                                <div class="text-blue-100 text-sm">
+                                    Satisfacción del Cliente
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
+                                    15
+                                </div>
+                                <div class="text-blue-100 text-sm">
+                                    Países Atendidos
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-3xl md:text-4xl font-bold text-yellow-400 mb-2">
+                                    5★
+                                </div>
+                                <div class="text-blue-100 text-sm">
+                                    Calificación Promedio
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TestimonialsSection -->
+            <section id="testimonios" class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <span class="bg-blue-100 text-blue-500 mb-4 px-4 py-1 rounded-full text-sm">
+                            Testimonios de Pacientes
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Lo que Dicen Nuestros Pacientes
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            La satisfacción de nuestros pacientes es nuestra mejor carta de presentación.
+                            Conoce sus experiencias reales.
+                        </p>
+                    </div>
+                    <div class="relative mb-16">
+                        <div class="max-w-4xl mx-auto shadow-2xl border-0 overflow-hidden rounded-lg">
+                            <div class="grid md:grid-cols-2 gap-0">
+                                <div class="p-8 md:p-12 flex flex-col justify-center">
+                                    <div class="testimonial">
+                                        <i class="fas fa-quote-left text-4xl text-yellow-500 mb-6"></i>
+                                        <div class="flex items-center mb-4">
+                                            <i class="fas fa-star text-yellow-500"></i>
+                                            <i class="fas fa-star text-yellow-500"></i>
+                                            <i class="fas fa-star text-yellow-500"></i>
+                                            <i class="fas fa-star text-yellow-500"></i>
+                                            <i class="fas fa-star text-yellow-500"></i>
+                                            <span class="ml-2 text-sm text-gray-600">5.0</span>
+                                        </div>
+                                        <blockquote class="text-lg text-gray-700 leading-relaxed mb-6">
+                                            "La Dra. Yurani transformó completamente mi sonrisa. No solo mejoró mi apariencia, sino también mi confianza. El proceso fue cómodo y los resultados superaron mis expectativas. ¡Definitivamente la recomiendo!"
+                                        </blockquote>
+                                        <div class="flex items-center space-x-4">
+                                            <div class="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold">MR</div>
+                                            <div>
+                                                <h4 class="font-semibold text-gray-900">María José Rodríguez</h4>
+                                                <div class="flex items-center text-sm text-gray-600">
+                                                    <i class="fas fa-map-marker-alt mr-1"></i>
+                                                    Cali, Colombia
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-gradient-to-br from-blue-50 to-blue-100/5 p-8 md:p-12 flex flex-col justify-center">
+                                    <h3 class="text-xl font-bold text-gray-900 mb-6">
+                                        Transformación Realizada
+                                    </h3>
+                                    <div class="space-y-4">
+                                        <div class="bg-white/70 rounded-lg p-4">
+                                            <div class="flex items-center mb-2">
+                                                <div class="w-3 h-3 bg-red-500 rounded-full mr-2"></div>
+                                                <span class="text-sm font-semibold text-gray-700">Antes:</span>
+                                            </div>
+                                            <p class="text-sm text-gray-600">
+                                                Tenía dientes desalineados y manchados
+                                            </p>
+                                        </div>
+                                        <div class="bg-white/70 rounded-lg p-4">
+                                            <div class="flex items-center mb-2">
+                                                <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                                                <span class="text-sm font-semibold text-gray-700">Después:</span>
+                                            </div>
+                                            <p class="text-sm text-gray-600">
+                                                Sonrisa perfecta y natural
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl p-8 md:p-12 text-white">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">
+                            ¿Listo para tu Transformación?
+                        </h3>
+                        <p class="text-blue-100 mb-8 max-w-2xl mx-auto">
+                            Únete a cientos de pacientes satisfechos que han confiado en nosotros
+                            para transformar sus sonrisas y cambiar sus vidas.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button class="bg-white text-blue-500 hover:bg-gray-100 px-6 py-3 rounded-lg">
+                                Ver Más Testimonios
+                            </button>
+                            <button class="border-white text-white hover:bg-white hover:text-blue-500 px-6 py-3 rounded-lg">
+                                Solicitar Consulta
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BlogSection -->
+            <section id="blog" class="py-20 bg-gradient-to-b from-white to-blue-50/30">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <span class="bg-yellow-100 text-yellow-500 mb-4 px-4 py-1 rounded-full text-sm">
+                            Blog de Salud Oral
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Consejos y Novedades Dentales
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Mantente informado con los últimos consejos, técnicas y tratamientos
+                            en odontología moderna y estética dental.
+                        </p>
+                    </div>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                        <!-- Blog Post -->
+                        <div class="group hover:shadow-lg transition-all duration-300 overflow-hidden rounded-lg blog-post" data-category="Implantes">
+                            <img src="https://images.unsplash.com/photo-1598256989809-394fa4f6cd26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjBpbXBsYW50cyUyMGJlZm9yZSUyMGFmdGVyfGVufDF8fHx8MTc1NTU3NjY4Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="p-5">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-500 transition-colors">Cuidados Post-Operatorios para Implantes Dentales</h3>
+                                <p class="text-gray-600 text-sm mb-4">Descubre las mejores prácticas para garantizar el éxito de tu implante dental y acelerar el proceso de cicatrización.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700 text-sm font-semibold">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                        <!-- Blog Post -->
+                        <div class="group hover:shadow-lg transition-all duration-300 overflow-hidden rounded-lg blog-post" data-category="Turismo Dental">
+                            <img src="https://images.unsplash.com/photo-1642844819197-5f5f21b89ff8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjBjbGluaWMlMjBtb2Rlcm4lMjBpbnRlcmlvcnxlbnwxfHx8fDE3NTU1NzY2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="p-5">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-500 transition-colors">Turismo Dental en Colombia: Todo lo que Necesitas Saber</h3>
+                                <p class="text-gray-600 text-sm mb-4">Colombia se ha convertido en un destino líder para el turismo dental. Conoce las ventajas y qué esperar de tu viaje.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700 text-sm font-semibold">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                        <!-- Blog Post -->
+                        <div class="group hover:shadow-lg transition-all duration-300 overflow-hidden rounded-lg blog-post" data-category="Estética Dental">
+                            <img src="https://images.unsplash.com/photo-1575183464658-e031ef1cd833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzbWlsZSUyMHRlZXRofGVufDF8fHx8MTc1NTU3NjY4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="p-5">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-500 transition-colors">5 Señales de que Necesitas un Diseño de Sonrisa</h3>
+                                <p class="text-gray-600 text-sm mb-4">Identifica cuándo es el momento perfecto para considerar un diseño de sonrisa profesional y mejorar tu autoestima.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700 text-sm font-semibold">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                        <!-- Blog Post -->
+                        <div class="group hover:shadow-lg transition-all duration-300 overflow-hidden rounded-lg blog-post" data-category="Tratamientos Estéticos">
+                            <img src="https://images.unsplash.com/photo-1565090567208-c8038cfcf6cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBmZW1hbGUlMjBkZW50aXN0JTIwZG9jdG9yfGVufDF8fHx8MTc1NTU3NjY4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="p-5">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-500 transition-colors">Botox Dental: Más Allá de la Estética Facial</h3>
+                                <p class="text-gray-600 text-sm mb-4">Conoce los beneficios terapéuticos del botox dental para tratar el bruxismo y la hipertrofia del masetero.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700 text-sm font-semibold">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                        <!-- Blog Post -->
+                        <div class="group hover:shadow-lg transition-all duration-300 overflow-hidden rounded-lg blog-post" data-category="Rehabilitación">
+                            <img src="https://images.unsplash.com/photo-1642844819197-5f5f21b89ff8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZW50YWwlMjBjbGluaWMlMjBtb2Rlcm4lMjBpbnRlcmlvcnxlbnwxfHx8fDE3NTU1NzY2ODF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="p-5">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-500 transition-colors">Carillas vs. Coronas: ¿Cuál es la Mejor Opción?</h3>
+                                <p class="text-gray-600 text-sm mb-4">Comparamos las ventajas y desventajas de carillas y coronas para ayudarte a tomar la mejor decisión.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700 text-sm font-semibold">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                        <!-- Blog Post -->
+                        <div class="group hover:shadow-lg transition-all duration-300 overflow-hidden rounded-lg blog-post" data-category="Prevención">
+                            <img src="https://images.unsplash.com/photo-1575183464658-e031ef1cd833?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWF1dGlmdWwlMjBzbWlsZSUyMHRlZXRofGVufDF8fHx8MTc1NTU3NjY4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="p-5">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-500 transition-colors">Rutina de Higiene Oral: Consejos de una Especialista</h3>
+                                <p class="text-gray-600 text-sm mb-4">Aprende la rutina de higiene oral perfecta para mantener tu sonrisa saludable y prevenir problemas dentales.</p>
+                                <a href="#" class="text-blue-500 hover:text-blue-700 text-sm font-semibold">Leer más <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-700 rounded-2xl p-8 md:p-12 text-center text-white">
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">
+                            Suscríbete a Nuestro Blog
+                        </h3>
+                        <p class="text-blue-100 mb-8 max-w-2xl mx-auto">
+                            Recibe los últimos consejos de salud oral, novedades en tratamientos
+                            y promociones especiales directamente en tu email.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                            <input type="email" placeholder="Tu email aquí..." class="flex-1 px-4 py-3 rounded-lg text-gray-900 border-0 focus:ring-2 focus:ring-yellow-400 outline-none">
+                            <button class="bg-white hover:bg-gray-100 text-gray-900 px-6 py-3 rounded-lg">
+                                Suscribirse
+                            </button>
+                        </div>
+                        <p class="text-xs text-blue-100 mt-4">
+                            * No spam. Puedes cancelar tu suscripción en cualquier momento.
+                        </p>
+                    </div>
+                    <div class="mt-16 text-center">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">
+                            Explora por Categorías
+                        </h3>
+                        <div class="flex flex-wrap justify-center gap-3">
+                            <button data-category="all" class="blog-filter-button bg-blue-500 text-white px-4 py-2 rounded-md">Todos</button>
+                            <button data-category="Estética Dental" class="blog-filter-button border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Estética Dental</button>
+                            <button data-category="Implantes" class="blog-filter-button border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Implantes</button>
+                            <button data-category="Turismo Dental" class="blog-filter-button border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Turismo Dental</button>
+                            <button data-category="Prevención" class="blog-filter-button border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Prevención</button>
+                            <button data-category="Tratamientos Estéticos" class="blog-filter-button border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 py-2 rounded-md">Tratamientos Estéticos</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ContactSection -->
+            <section id="contacto" class="py-20 bg-white">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-16">
+                        <span class="bg-blue-100 text-blue-500 mb-4 px-4 py-1 rounded-full text-sm">
+                            Contacto y Ubicación
+                        </span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                            Agenda tu Consulta
+                        </h2>
+                        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                            Estamos aquí para ayudarte a lograr la sonrisa de tus sueños.
+                            Contáctanos y comencemos tu transformación hoy mismo.
+                        </p>
+                    </div>
+                    <div class="grid lg:grid-cols-12 gap-12">
+                        <div class="lg:col-span-7">
+                            <div class="shadow-2xl border-0 rounded-lg p-8">
+                                <h3 class="text-2xl flex items-center font-semibold mb-4"><i class="fas fa-comment-dots mr-3"></i>Solicita tu Consulta Gratuita</h3>
+                                <form class="space-y-6">
+                                    <div class="grid md:grid-cols-2 gap-6">
+                                        <input type="text" placeholder="Nombre Completo *" class="w-full p-3 border rounded-lg">
+                                        <input type="tel" placeholder="Teléfono *" class="w-full p-3 border rounded-lg">
+                                    </div>
+                                    <input type="email" placeholder="Email *" class="w-full p-3 border rounded-lg">
+                                    <select class="w-full p-3 border rounded-lg">
+                                        <option>Selecciona un servicio</option>
+                                        <option>Diseño de Sonrisa</option>
+                                        <option>Implantes Dentales</option>
+                                    </select>
+                                    <textarea placeholder="Mensaje" rows="4" class="w-full p-3 border rounded-lg"></textarea>
+                                    <button type="submit" class="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white p-3 rounded-lg">Enviar Solicitud</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 space-y-8">
+                            <div class="p-6 border rounded-lg hover:shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-yellow-500 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-phone-alt text-white text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900 mb-1">Teléfono</h3>
+                                        <p class="text-blue-500 font-medium">300 705 4003</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 border rounded-lg hover:shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-yellow-500 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-envelope text-white text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
+                                        <p class="text-blue-500 font-medium">odontologiayuranipasto@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 border rounded-lg hover:shadow-lg">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-yellow-500 rounded-lg flex items-center justify-center">
+                                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900 mb-1">Dirección</h3>
+                                        <p class="text-blue-500 font-medium">Calle 5 # 38-25, Consultorio 204</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-16 bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-8 md:p-12 text-center border border-red-100">
+                        <div class="flex items-center justify-center mb-4">
+                            <div class="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-phone-alt text-white text-3xl animate-pulse"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                            ¿Tienes una Emergencia Dental?
+                        </h3>
+                        <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                            Ofrecemos atención de urgencias las 24 horas. No dejes que el dolor
+                            dental arruine tu día, contáctanos inmediatamente.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <button class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                Emergencia: 300 705 4003
+                            </button>
+                            <button class="border-red-500 text-red-500 hover:bg-red-500 hover:text-white px-6 py-3 rounded-lg">
+                                <i class="fab fa-whatsapp mr-2"></i>
+                                WhatsApp Urgente
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+                <div class="grid lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4">
+                        <div class="flex items-center space-x-3 mb-6">
+                            <div class="w-12 h-12 bg-gradient-to-r from-teal-400 to-blue-300 rounded-full flex items-center justify-center">
+                                <span class="text-gray-900 font-bold text-xl">
+                                    Y
+                                </span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold">
+                                    Dra. Yurani Pasto
+                                </h3>
+                                <p class="text-blue-200 text-sm">
+                                    Odontología Estética
+                                </p>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed mb-6">
+                            Especialista en odontología estética y
+                            rehabilitación oral. Transformamos vidas
+                            devolviendo naturalidad a tu sonrisa con más de 10
+                            años de experiencia y técnicas de vanguardia.
+                        </p>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-phone-alt text-teal-400"></i>
+                                <span>300 705 4003</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-envelope text-teal-400"></i>
+                                <span>odontologiayuranipasto@gmail.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-map-marker-alt text-teal-400"></i>
+                                <span>
+                                    Calle 5 # 38-25, Consultorio 204, Cali
+                                </span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-clock text-teal-400"></i>
+                                <span>Atención 24 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <h4 class="text-lg font-semibold mb-4 text-teal-400">
+                            Servicios
+                        </h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors duration-200 text-sm">
+                                    Diseño de Sonrisa
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors duration-200 text-sm">
+                                    Implantes Dentales
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors duration-200 text-sm">
+                                    Ortodoncia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors duration-200 text-sm">
+                                    Carillas
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-2">
+                        <h4 class="text-lg font-semibold mb-4 text-teal-400">
+                            Legal
+                        </h4>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors duration-200 text-sm">
+                                    Política de Privacidad
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors duration-200 text-sm">
+                                    Términos de Uso
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-colors duration-200 text-sm">
+                                    Cookies
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lg:col-span-4">
+                        <h4 class="text-lg font-semibold mb-4 text-teal-400">
+                            Mantente Conectado
+                        </h4>
+                        <div class="mb-6">
+                            <p class="text-gray-300 text-sm mb-3">
+                                Recibe consejos de salud oral y promociones
+                                especiales
+                            </p>
+                            <div class="flex">
+                                <input type="email" placeholder="Tu email" class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-l-lg text-sm focus:outline-none focus:border-teal-400">
+                                <button class="bg-teal-400 text-gray-900 px-4 py-2 rounded-r-lg hover:bg-teal-300 transition-colors text-sm font-medium">
+                                    Suscribir
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="font-medium mb-3">Síguenos</h5>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-all duration-200">
+                                    <i class="fab fa-instagram text-2xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-all duration-200">
+                                    <i class="fab fa-tiktok text-2xl"></i>
+                                </a>
+                                <a href="#" class="text-gray-300 hover:text-teal-400 transition-all duration-200">
+                                    <i class="fab fa-facebook text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                    <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <div class="flex items-center space-x-2 text-sm text-gray-400">
+                            <span>
+                                © 2024 Dra. Yurani Pasto. Todos los
+                                derechos reservados.
+                            </span>
+                        </div>
+                        <div class="flex items-center space-x-1 text-sm text-gray-400">
+                            <span>Hecho con</span>
+                            <i class="fas fa-heart text-red-500"></i>
+                            <span>para sonrisas perfectas</span>
+                        </div>
+                        <div class="flex space-x-6 text-sm">
+                            <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">
+                                Política de Privacidad
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">
+                                Términos de Uso
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-teal-400 transition-colors">
+                                Cookies
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- WhatsAppFloat -->
+        <a href="https://wa.me/573007054003" target="_blank" class="whatsapp-float">
+            <i class="fab fa-whatsapp text-white text-3xl"></i>
+        </a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
